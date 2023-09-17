@@ -1,30 +1,42 @@
 # Restaurant Management System
 
-## Table of Contents
-- [Project Overview](#project-overview)
-- [Getting Started](#getting-started)
+## Frameworks and Language Used
+- Spring Boot for the backend
+- Java for programming
+- Spring Initializr
+- Maven for dependency management
 
+## Data Flow
+- The client sends HTTP requests to the server.
+- The server processes the requests through controllers.
+- Controllers communicate with services to handle business logic.
+- Services interact with the repository to perform database operations.
+- Data is retrieved from or stored in the database.
 
-## Project Overview
+## Functions Used
 
-This project is a Restaurant Management System developed using Spring Boot. It allows you to manage restaurant data, including creating, updating, retrieving, and deleting restaurant records.
+### Controller
+- `RestaurantController`: Handles incoming HTTP requests and manages the flow of data.
 
-### Restaurant Model
+### Services
+- `RestaurantService`: Contains business logic for restaurant-related operations.
 
-The `Restaurant` model class has the following class variables:
+### Repository
+- `RestaurantRepository`: Performs CRUD operations on the database.
 
-- `id` (Long): The unique identifier for the restaurant.
-- `name` (String): The name of the restaurant.
-- `address` (String): The address of the restaurant.
-- `phoneNumber` (String): The contact number of the restaurant.
-- `specialty` (String): The specialty or type of cuisine the restaurant offers.
-- `totalStaffs` (int): The total number of staff members at the restaurant.
+## Database Design
+- The database contains a table named `restaurant` with fields such as `id`, `name`, `address`, `phoneNumber`, `specialty`, and `totalStaffs`.
 
+## Data Structure Used
+- For data storage and retrieval, we use a relational database management system (RDBMS) like MySQL or PostgreSQL.
 
-## Getting Started
+## Project Summary
 
-To get started with this project, follow these steps:
+This Restaurant Management System is built using Spring Boot and Java, with Maven for dependency management. It allows users to manage restaurant data, including adding, updating, retrieving, and deleting restaurant records.
 
-1. Use the [Spring Initializer](https://start.spring.io/) to create a new Spring Boot project with the required dependencies.
+- The application follows a structured data flow from the client to the server, through controllers, services, and the repository layer.
+- Controllers handle HTTP requests, services contain business logic, and the repository performs database operations.
+- The database design includes a table for restaurants, storing essential information like name, address, phone number, specialty, and total staff.
+- Relational database management systems are used for efficient data storage and retrieval.
 
 
